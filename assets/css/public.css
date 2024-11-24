@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  all: unset;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background-color: #b28850;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  align-items: center;
+  background-color: #fff;
+}
+
+header img {
+  transform: translate(-12px, 45%);
+}
+
+nav {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 22px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+.banner {
+  margin: 0 auto;
+  max-width: 1320px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .absolute {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 15%;
+  height: auto;
+}
+
+.banner .absolute:nth-child(2) {
+  transform: translate(-200px, 75px);
+}
+
+.banner .absolute:nth-child(3) {
+  width: 21%;
+  transform: translate(-22px, 120px);
+}
+
+.banner .absolute:nth-child(4) {
+  width: 13%;
+  transform: translate(10px, 385px);
+}
+
+.banner .absolute:nth-child(5) {
+  width: 21%;
+  transform: translate(-200px, 460px);
+}
+
+.banner .absolute:nth-child(6) {
+  width: 15%;
+  transform: translate(-254px, 285px);
+}
+
+.banner .absolute:nth-child(7) {
+  width: 15%;
+  transform: translate(-175px, 345px);
+}
+
+
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer p:last-child {
+  margin-bottom: 0;
+}
+
+.title {
+  all: unset;
+  font-size: 40px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.title.center {
+  margin-left: 50%;
+ 
+}
+
+.title::before {
+  content: '';
+  background: url(../images/index/flower.jpg) no-repeat center center / cover;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.active a {
+  color: #fff;
+}

@@ -1,0 +1,259 @@
+// 重置样式
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// 全局变量
+$main-color: #b28850;
+$container-width: 1320px;
+// $container-width: 100%;
+
+// 通用容器
+.container {
+  max-width: $container-width;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  background-color: $main-color;
+  // background-color: #fff;
+}
+
+// 顶部图片
+header {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+
+  align-items: center;
+  background-color: #fff;
+
+
+  img {
+
+    transform: translate(-12px, 45%)
+  }
+
+}
+
+// 导航栏
+nav {
+  width: 100%;
+  // background-color: rgba(0, 0, 0, 0.2);
+  padding: 20px 0;
+  margin: 0 auto;
+  overflow: hidden;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+
+  a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 22px;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+// Banner
+.banner {
+  margin: 0 auto;
+  max-width: $container-width;
+
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .absolute {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 15%;
+    height: auto;
+
+
+    &:nth-child(2) {
+      transform: translate(-200px, 75px);
+
+    }
+
+    &:nth-child(3) {
+      width: 21%;
+      transform: translate(-22px, 120px);
+    }
+
+    &:nth-child(4) {
+      width: 13%;
+      transform: translate(10px, 385px);
+    }
+
+    &:nth-child(5) {
+      width: 21%;
+      transform: translate(-200px, 460px);
+    }
+
+    &:nth-child(6) {
+      width: 15%;
+      transform: translate(-254px, 285px);
+    }
+
+    &:nth-child(7) {
+      width: 15%;
+      transform: translate(-175px, 345px);
+    }
+
+
+
+  }
+
+
+}
+
+// 公益中心简介
+.intro {
+  padding: 40px 0;
+  position: relative;
+  width: 100vw;
+  margin: 0 auto;
+  background-color: #fff;
+  overflow: hidden;
+
+  .line {
+    width: $container-width;
+    margin: 0 auto;
+    height: 3px;
+    background-color: $main-color;
+    margin-bottom: 30px;
+
+  }
+
+  h2 {
+    position: absolute;
+    top: 5px;
+    left: 30%;
+    text-align: center;
+    color: #000;
+    background-color: #fff;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+  }
+
+  &-content {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-top: 100px;
+
+  }
+
+  &-img {
+    flex: 1;
+    overflow: hidden;
+
+    img {
+      width: 90%;
+
+    }
+  }
+
+  &-text {
+    flex: 1;
+    line-height: 1.5;
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+// 活动现场
+.activities {
+
+  width: 100vw;
+  background-color: #fff;
+  color: #000;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .line {
+    width: $container-width;
+    margin: 0 auto;
+    margin-top: 30px;
+    height: 3px;
+    background-color: $main-color;
+    margin-bottom: 30px;
+
+  }
+
+  .container {
+    width: $container-width;
+
+    position: relative;
+    padding-top: 30px;
+
+    h2 {
+      position: absolute;
+      top: -63px;
+
+      left: 0%;
+      background-color: #fff;
+      padding: 15px 40px;
+      text-align: center;
+
+      margin-bottom: 30px;
+    }
+
+    .activities-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-auto-columns: max-content;
+      grid-auto-rows: max-content;
+      gap: 20px;
+
+      .activity-item {
+        width: 100%;
+
+        img {
+          width: 100%;
+
+
+        }
+      }
+    }
+  }
+}
+
+// 页脚
+footer {
+  padding: 40px 0;
+  text-align: center;
+  color: white;
+
+  p {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

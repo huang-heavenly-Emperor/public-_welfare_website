@@ -1,0 +1,41 @@
+main {
+  background-color: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+
+main .container .process-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  margin: 30px 0;
+}
+
+main .container .process-item .line {
+  position: absolute;
+  width: 72%;
+  height: 6px;
+  border-radius: 3px;
+  top: 23px;
+  right: 0;
+  background-color: #b0864e;
+}
+
+main .container .process-item .title {
+  margin-right: auto;
+}
+
+main .container .process-item .content {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+main .container .process-item .content .right {
+  align-self: start;
+}
